@@ -17,6 +17,7 @@ export default function Register() {
     e.preventDefault();
     try {
       const response = await userRegister(formData);
+      console.log(response)
       console.log(formData.role);
       toast.success(response.data.message);
       localStorage.setItem("activationToken", response.data.activationToken);
