@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://e-learning-ahkp.onrender.com", // Update to your backend URL
+  baseURL: "https://e-learning-backend-ecvw.onrender.com/api", // Update to your backend URL
 });
 
 API.interceptors.request.use((config) => {
